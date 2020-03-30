@@ -18,7 +18,9 @@ toolbar = DebugToolbarExtension(app)
 
 
 def serialize_cupcake(cupcake):
-    return {"flavor": cupcake.flavor,
+    return {
+            "id": cupcake.id,
+            "flavor": cupcake.flavor,
             "size": cupcake.size,
             "rating": cupcake.rating,
             "image": cupcake.image
